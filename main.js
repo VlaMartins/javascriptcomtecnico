@@ -15,7 +15,6 @@ minutos %= 60;
 horas %= 24;
 
 contadores[0].textContent = dias + " dias " + horas + " horas ";
-document.querySelector("#dias_restantes").textContent = diasQueFaltam;
 
 
 
