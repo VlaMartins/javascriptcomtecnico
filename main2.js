@@ -1,3 +1,5 @@
+/* EU TENTANDO FAZER GERAR EM DIAS E HORAS*/
+
 const contadores = document.querySelectorAll ("#dias_restantes");
 
 const dataAtual = new Date(); // cria um objeto data que recupera / busca a data atual 
