@@ -6,7 +6,7 @@ while (diasQueFaltam < 0) {
     diasQueFaltam = calculaDias();
 }
 
-document.querySelector("#dias_restantes").textContent = "Falta " + diasQueFaltam + " Dias";
+document.querySelector("#dias_restantes").textContent = "Faltam " + diasQueFaltam + " Dias";
 
 function calculaDias() {
     let dataObjetivo = prompt("Data do seu próximo aniversário: (formato ANO-MÊS-DIA, exemplo: 2024-05-30");
