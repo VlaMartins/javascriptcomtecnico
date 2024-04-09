@@ -1,5 +1,5 @@
-const dataAtual = new Date();
-let diasQueFaltam = calculaDias();
+const dataAtual = new Date();//
+let diasQueFaltam = calculaDias();//
 
 while (diasQueFaltam < 0) {
     alert("A data informada é menor que a data atual, atualize a página e insira uma nova data");
