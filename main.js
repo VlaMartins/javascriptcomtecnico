@@ -1,16 +1,4 @@
-const dataAtual = new Date();//
-let diasQueFaltam = calculaDias();//
+const dataAtual = new Date();// cria um objeto data que recupera / busca a data atual 
+prompt("Data do seu próximo aniversário: (formato ANO-MÊS-DIA. Exemplo: 2024-05-30"); //é uma funcao nativa do js e navegador pra passar msg
 
-while (diasQueFaltam < 0) {
-    alert("A data informada é menor que a data atual, atualize a página e insira uma nova data");
-    diasQueFaltam = calculaDias();
-}
-
-document.querySelector("#dias_restantes").textContent = "Faltam " + diasQueFaltam + " Dias";
-
-function calculaDias() {
-    let dataObjetivo = prompt("Data do seu próximo aniversário: (formato ANO-MÊS-DIA, exemplo: 2024-05-30");
-    dataObjetivo = new Date(dataObjetivo + "T23:59:59");
-    return Math.floor((dataObjetivo - dataAtual) / 86400000);
-}
 
