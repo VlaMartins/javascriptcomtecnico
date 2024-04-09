@@ -14,7 +14,7 @@ segundos %=  60; // sinal de porcentagem traz o resto da divisao
 minutos %= 60;
 horas %= 24;
 
-contadores[0].textContent = dias + " dias " + horas + " horas ";
+contadores[0].textContent = dias + " dias " + horas + " horas " ;
 
 
 
