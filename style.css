@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: black;
@@ -14,4 +15,5 @@ h1 span{
 #dias_restantes{
     color: greenyellow;
     font-size: 50px;
+    font-family: "Raleway", sans-serif;
 }
