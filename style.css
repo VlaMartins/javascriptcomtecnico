@@ -20,5 +20,7 @@ h1 span{
 
 #horario{
     color: red;
-    font-size: 30px;
+    font-size: 25px;
+    font-style: italic;
+    text-align: right;
 }
