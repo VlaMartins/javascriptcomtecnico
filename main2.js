@@ -17,3 +17,5 @@ minutos %= 60;
 horas %= 24;
 
 contadores[0].textContent = dias + " dias  "+horas+"  horas  "+minutos+"  minutos " +segundos+" segundos ";
+
+document.querySelector("#horario").textContent = dataAtual;
