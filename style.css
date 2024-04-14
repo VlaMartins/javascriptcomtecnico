@@ -20,11 +20,14 @@ h1 span{
 
 #horario{
     color: red;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     text-align: right;
 }
 
 .textoclaro{
     color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-align: right;
 }
