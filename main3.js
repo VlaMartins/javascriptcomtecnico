@@ -1,22 +1,12 @@
-// GERANDO total de dias desde que nasceu
-const contadores = document.querySelectorAll ("#dias_vividos");
+//quantos dias eu ja vivi
+const dataAtual = new Date(); 
+let dataNiver = prompt("Data do seu próximo aniversário: (formato ANO-MÊS-DIA. Exemplo: 2024-05-30"); //é uma funcao nativa do js e navegador pra passar msg
+var diferencaEmMilissegundos = dataAtual - dataNascimento;
+var diasVividos = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
 
-function calcularDiasVividos(dataNascimento) { // Converter a data de nascimento para um objeto Date
-    var dataNascimentoObj = new Date(dataNascimento);
-    
-    // Obter a data atual
-    var dataAtual = new Date();
-    
-    // Calcular a diferença em milissegundos entre as duas datas
-    var diferencaEmMilissegundos = dataAtual - dataNascimentoObj;
-    
-    // Converter a diferença de milissegundos para dias
-    var diasVividos = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
-    
-    return diasVividos;
-}
+document.querySelector("#dias_vividos").textContent = diasVividos;
 
-// Exemplo de uso
-var dataNascimento = "1990-05-15"; // Formato: AAAA-MM-DD
-var diasVividos = calcularDiasVividos(dataNascimento);
-console.log("Você já viveu aproximadamente " + diasVividos + " dias.");
+
+
+
+
