@@ -19,6 +19,4 @@ function calcularDiasVividos(dataNascimento) { // Converter a data de nascimento
 // Exemplo de uso
 var dataNascimento = "1990-05-15"; // Formato: AAAA-MM-DD
 var diasVividos = calcularDiasVividos(dataNascimento);
-
-
-document.querySelector("#dias_vividos").textContent = (diasVividos);
+console.log("Você já viveu aproximadamente " + diasVividos + " dias.");
