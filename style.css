@@ -31,3 +31,9 @@ h1 span{
     font-style: italic;
     text-align: right;
 }
+
+#dias_vividos{
+    color: greenyellow;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+}
