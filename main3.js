@@ -1,18 +1,24 @@
 // GERANDO total de dias desde que nasceu
 const contadores = document.querySelectorAll ("#dias_vividos");
 
-const dataAtual = new Date(); // cria um objeto data que recupera / busca a data atual 
-let dataNasc = prompt("Data do seu próximo aniversário: (formato ANO-MÊS-DIA. Exemplo: 2024-05-30"); //é uma funcao nativa do js e navegador pra passar msg
-dataNiver = new Date (dataNasc+"T23:59:59"); //mudando o valor para valor de data e indica por si so que os proximos valores são tempo
-let diasQueFaltam  = dataAtual - dataNasc; //24horas x 60min x 60seg X 1000milissegundos = minutos x segundos x horas x mil   TRANSFORMANDO MILISSSEGUNDOS EM DIAS
+function calcularDiasVividos(dataNascimento) { // Converter a data de nascimento para um objeto Date
+    var dataNascimentoObj = new Date(dataNascimento);
+    
+    // Obter a data atual
+    var dataAtual = new Date();
+    
+    // Calcular a diferença em milissegundos entre as duas datas
+    var diferencaEmMilissegundos = dataAtual - dataNascimentoObj;
+    
+    // Converter a diferença de milissegundos para dias
+    var diasVividos = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
+    
+    return diasVividos;
+}
 
-let segundos = Math.floor (diasQueFaltam / 1000);
-let minutos = Math.floor (segundos / 60); 
-let horas = Math.floor (minutos / 60);
-let dias = Math.floor (horas / 24); 
+// Exemplo de uso
+var dataNascimento = "1990-05-15"; // Formato: AAAA-MM-DD
+var diasVividos = calcularDiasVividos(dataNascimento);
 
-segundos %=  60; // sinal de porcentagem traz o resto da divisao
-minutos %= 60;
-horas %= 24;
 
-contadores[0].textContent = dias + " dias  "+horas+"  horas  "+minutos+"  minutos ";
+document.querySelector("#dias_vividos").textContent = (diasVividos);
