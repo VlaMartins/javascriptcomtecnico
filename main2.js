@@ -19,3 +19,8 @@ horas %= 24;
 contadores[0].textContent = dias + " dias  "+horas+"  horas  "+minutos+"  minutos " +segundos+" segundos ";
 
 document.querySelector("#horario").textContent = (dataAtual);
+
+horario.textContent = > 
+${dataAtual.getDate()}/${dataAtual.getMonth()+1} 
+${dataAtua.getFullYear()}
+${dataAtual.getHours()}:${dataAtual.getMinutes()}
