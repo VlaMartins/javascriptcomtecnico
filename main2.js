@@ -1,5 +1,4 @@
-/* EU TENTANDO FAZER GERAR EM DIAS E HORAS*/
-
+// GERANDO EM DIAS, MESES, HORAS E MINUTOS
 const contadores = document.querySelectorAll ("#dias_restantes");
 
 const dataAtual = new Date(); // cria um objeto data que recupera / busca a data atual 
@@ -16,6 +15,6 @@ segundos %=  60; // sinal de porcentagem traz o resto da divisao
 minutos %= 60;
 horas %= 24;
 
-contadores[0].textContent = dias + " dias  "+horas+"  horas  "+minutos+"  minutos " +segundos+" segundos ";
+contadores[0].textContent = dias + " dias  "+horas+"  horas  "+minutos+"  minutos ";
 
 document.querySelector("#horario").textContent = (dataAtual);
